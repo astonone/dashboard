@@ -1,3 +1,5 @@
+export type BookmarkItem = BookmarkLink | BookmarkGroup
+
 export interface BookmarkLink {
     href: string
     icon?: string
@@ -6,7 +8,7 @@ export interface BookmarkLink {
 }
 
 export interface BookmarkGroup {
-    [groupName: string]: BookmarkLink[]
+    [groupName: string]: BookmarkItem[]
 }
 
 export interface SettingsConfig {

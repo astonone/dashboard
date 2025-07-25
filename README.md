@@ -34,7 +34,7 @@ All settings and bookmarks are configured using YAML files located in the `publi
 
 This file defines the bookmarks displayed in groups. Each group has a title and a list of links.
 
-#### Example:
+#### Example (flat structure):
 
 ```yaml
 - Work:
@@ -57,6 +57,22 @@ Each `link` accepts:
 * `href`: Link URL
 * `icon`: (optional) an icon name from Material Design Icons
 * `image`: (optional) path to a local image icon (takes priority over icon if present)
+
+✅ Nested Groups Support
+```yaml
+- Deploy:
+    - href: https://jenkins.example.com
+      label: Jenkins
+      image: /images/jenkins.png
+    - Sub Deploy:
+        - href: https://inner.example.com
+          label: Inner Tool
+          image: /images/inner.png
+        - Sub Sub Deploy:
+            - href: https://deep.example.com
+              label: Deep Link
+              image: /images/deep.png
+```
 
 ---
 
