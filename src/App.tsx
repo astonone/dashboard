@@ -41,14 +41,6 @@ function App() {
           ))}
         </div>
       </div>
-
-      <div className="p-4">
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 mt-8">
-          {bookmarks.map((group, idx) => (
-            <LinkGroup key={idx} group={group} />
-          ))}
-        </div>
-      </div>
     </div>
   );
 }
