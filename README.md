@@ -102,7 +102,7 @@ Supported settings:
 
 ### 🕒 Clock
 
-* Shows current time, date and timezone based on `Europe/Tallinn`
+* Shows current time, date and timezone
 * Auto-updates every second
 
 ### 🌦️ Weather
