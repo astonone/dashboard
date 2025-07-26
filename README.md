@@ -53,12 +53,13 @@ This file defines the bookmarks displayed in groups. Each group has a title and 
 
 Each `link` accepts:
 
-* `label`: Display name
-* `href`: Link URL
-* `icon`: (optional) an icon name from Material Design Icons
-* `image`: (optional) path to a local image icon (takes priority over icon if present)
+- `label`: Display name
+- `href`: Link URL
+- `icon`: (optional) an icon name from Material Design Icons
+- `image`: (optional) path to a local image icon (takes priority over icon if present)
 
 ✅ Nested Groups Support
+
 ```yaml
 - Deploy:
     - href: https://jenkins.example.com
@@ -83,9 +84,9 @@ This file controls global app settings.
 #### Example:
 
 ```yaml
-backgroundImage: "/images/background.jpg"
-weatherApiKey: "YOUR_OPENWEATHERMAP_API_KEY"
-weatherCity: "Tallinn"
+backgroundImage: '/images/background.jpg'
+weatherApiKey: 'YOUR_OPENWEATHERMAP_API_KEY'
+weatherCity: 'Tallinn'
 clockWidget: on
 weatherWidget: on
 calendarWidget: off
@@ -93,12 +94,12 @@ calendarWidget: off
 
 Supported settings:
 
-* `backgroundImage`: relative or absolute path to background image
-* `weatherApiKey`: your [OpenWeatherMap](https://openweathermap.org/api) API key
-* `weatherCity`: city name to show weather for
-* `clockWidget`: set to `on` or `off` to enable/disable the clock widget
-* `weatherWidget`: set to `on` or `off` to enable/disable the weather widget
-* `calendarWidget`: set to `on` or `off` to enable/disable the calendar widget
+- `backgroundImage`: relative or absolute path to background image
+- `weatherApiKey`: your [OpenWeatherMap](https://openweathermap.org/api) API key
+- `weatherCity`: city name to show weather for
+- `clockWidget`: set to `on` or `off` to enable/disable the clock widget
+- `weatherWidget`: set to `on` or `off` to enable/disable the weather widget
+- `calendarWidget`: set to `on` or `off` to enable/disable the calendar widget
 
 > 💡 If `weatherApiKey` or `weatherCity` are missing, the weather widget won't be shown.
 
@@ -108,25 +109,24 @@ Supported settings:
 
 ### 🕒 Clock
 
-* Shows current time, date and timezone.
-* Auto-updates every second
+- Shows current time, date and timezone.
+- Auto-updates every second
 
 ### 🌦️ Weather
 
-* Uses OpenWeatherMap API
-* Displays:
-
-  * Current temperature
-  * Wind speed + direction
-  * Humidity
-  * Pressure
-  * Icon and description of current conditions
+- Uses OpenWeatherMap API
+- Displays:
+  - Current temperature
+  - Wind speed + direction
+  - Humidity
+  - Pressure
+  - Icon and description of current conditions
 
 ### 📅 Calendar
 
-* Displays current month with today’s date highlighted
-* Simple, clean and offline-friendly
-* Can be toggled via `calendarWidget` setting
+- Displays current month with today’s date highlighted
+- Simple, clean and offline-friendly
+- Can be toggled via `calendarWidget` setting
 
 ---
 
@@ -150,15 +150,14 @@ src/
 
 ## 📦 Dependencies
 
-* React
-* Vite
-* TailwindCSS
-* YAML parser (`js-yaml`)
-* Axios
+- React
+- Vite
+- TailwindCSS
+- YAML parser (`js-yaml`)
+- Axios
 
 ---
 
 ## 📝 License
 
 This project is MIT licensed. Customize and share freely.
-

@@ -1,6 +1,6 @@
-backgroundImage: "/images/background.jpg"
-weatherApiKey: "yourKey"
-weatherCity: "yourCity"
+backgroundImage: '/images/background.jpg'
+weatherApiKey: 'yourKey'
+weatherCity: 'yourCity'
 clockWidget: on
 weatherWidget: on
 calendarWidget: on
