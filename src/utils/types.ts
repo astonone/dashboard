@@ -15,6 +15,9 @@ export interface SettingsConfig {
     backgroundImage?: string
     weatherApiKey?: string
     weatherCity?: string
+    clockWidget?: 'on' | 'off'
+    weatherWidget?: 'on' | 'off'
+    calendarWidget?: 'on' | 'off'
 }
 
 export interface WeatherData {

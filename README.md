@@ -86,6 +86,9 @@ This file controls global app settings.
 backgroundImage: "/images/background.jpg"
 weatherApiKey: "YOUR_OPENWEATHERMAP_API_KEY"
 weatherCity: "Tallinn"
+clockWidget: on
+weatherWidget: on
+calendarWidget: off
 ```
 
 Supported settings:
@@ -93,6 +96,9 @@ Supported settings:
 * `backgroundImage`: relative or absolute path to background image
 * `weatherApiKey`: your [OpenWeatherMap](https://openweathermap.org/api) API key
 * `weatherCity`: city name to show weather for
+* `clockWidget`: set to `on` or `off` to enable/disable the clock widget
+* `weatherWidget`: set to `on` or `off` to enable/disable the weather widget
+* `calendarWidget`: set to `on` or `off` to enable/disable the calendar widget
 
 > 💡 If `weatherApiKey` or `weatherCity` are missing, the weather widget won't be shown.
 
@@ -102,7 +108,7 @@ Supported settings:
 
 ### 🕒 Clock
 
-* Shows current time, date and timezone
+* Shows current time, date and timezone.
 * Auto-updates every second
 
 ### 🌦️ Weather
@@ -110,11 +116,17 @@ Supported settings:
 * Uses OpenWeatherMap API
 * Displays:
 
-    * Current temperature
-    * Wind speed + direction
-    * Humidity
-    * Pressure
-    * Icon and description of current conditions
+  * Current temperature
+  * Wind speed + direction
+  * Humidity
+  * Pressure
+  * Icon and description of current conditions
+
+### 📅 Calendar
+
+* Displays current month with today’s date highlighted
+* Simple, clean and offline-friendly
+* Can be toggled via `calendarWidget` setting
 
 ---
 
