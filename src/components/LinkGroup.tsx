@@ -24,7 +24,9 @@ export default function LinkGroup({ group, depth = 0 }: Props) {
   return (
     <Card className="bg-white/10 backdrop-blur-md border border-white/10 shadow-md">
       <CardContent className="text-white">
-        <h2 className={`text-lg font-semibold mb-2 drop-shadow ${depth > 0 ? 'pl-4' : ''}`}>{title}</h2>
+        <h2 className={`text-lg font-semibold mb-2 drop-shadow ${depth > 0 ? 'pl-4' : ''}`}>
+          {title}
+        </h2>
 
         {links.length > 0 && (
           <div className="flex flex-wrap gap-2">

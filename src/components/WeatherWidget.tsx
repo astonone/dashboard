@@ -62,7 +62,6 @@ export default function WeatherWidget({ apiKey, city = 'Tallinn' }: Props) {
         setWeather(data);
       } catch (err) {
         setError('Failed to fetch weather data');
-        console.error(err);
       }
     };
 
